@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  
+    <style>
+      input {
+        margin: 10px;
+      }
+      select {
+        margin: 10px;
+      }
+      textarea{margin: 20px}
+
+      #to{
+        color: blueviolet;
+      }
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f7eebe;
+        }
+
+        form {
+            background-color: rgb(4, 4, 4);
+            padding: 10px; 
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 40px;
+            width: 100%;
+        }
+
+        label {
+            display: inline;
+            margin-bottom: 8px;
+        }
+    </style>
+
+    <!-- <input method="get/post" action="transfer" enctype="text/plain"> -->
+      <label for="from" style="padding: 10px"><b>From Account:</b></label
+      >
+      <input
+        type="text"
+        id="From"
+        name="From account"
+        placeholder="frm acc number"
+        style="padding: 5px"
+        required
+      /><br />
+      <label for="to" style="padding: 10px"><b>To Account</b></label
+      >
+      <input
+        type="text"
+        id="to"
+        name="To account"
+        placeholder="to acc number"
+        style="padding: 5px"
+      />
+      <br />
+      <label for="amount" style="padding: 10px"><b>Amount</b></label
+      >
+      <input
+        type="text"
+        id="to"
+        name="amount"
+        placeholder="amount"
+        style="padding: 5px"
+      />
+      <br />
+      <label for="type of Transfer">Type of Transfer:</label><br />
+      <select name="type of transfer" id="type of Transfer">
+        <optgroup label="form of transfer">
+          <option value="within bank">within bank</option>
+          <option value="within branch">within branch</option>
+          <option value="international">international</option>
+        </optgroup>
+        <optgroup label="platform">
+          <option value="UPI">UPI</option>
+          <option value="BHIM">BHIM</option>
+          <option value="internet banking">internet banking</option>
+        </optgroup>
+        </select>
+        <br />
+
+      <label for="type of Transfer"><b>Type of Transfer:</b></label><br>
+      <label for="within bank">within bank:</label>
+      <input type="checkbox" name="within bank" id="within bank"><br>
+      <label for="within branch">within branch:</label>
+      <input type="checkbox" name="within branch" id="within branch"><br>
+      <label for="international">international:</label>
+      <input type="checkbox" name="international" id="international"><br>
+
+
+      <label for="type of Transfer"><b>Type of Transfer:</b></label><br>
+      <label for="within bank">within bank:</label>
+      <input type="radio" name="within bank" id="within bank"><br>
+      <label for="within branch">within branch:</label>
+      <input type="radio" name="within branch" id="within branch"><br>
+      <label for="international">international:</label>
+      <input type="radio" name="international" id="international"><br>
+      
+      <label for="file upload">upload file:</label>
+      <input type="file" id="file upload"></input><br>
+
+      <label for="URL upload">upload URL:</label>
+      <input type="url" id="URL ipload"></input><br>
+
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity"></input><br>
+
+      <label for="date of transfer">select the date of transfer</label>
+      <input type="date" id="date of transfer" min="2023-12-01" max="2024-12-01"></input><br>
+
+      <label for="colour">Select colour:</label>
+      <input type="color" id="colour"></input><br>
+
+      <label for="search">Search:</label>
+      <input type="search" id="search">
+      <input type="submit">
+      </input><br>
+
+      <label for="ph number">Enter Phone Number:</label>
+      <input type="tel" id="ph number"></input><br>
+
+      <label for="speed">Speed of transfer:</label>
+      <input type="range" id="speed"></input><br>
+
+      <textarea rows="10" cols="50"> please enter your reviews </textarea>
+      <input type="submit">
+      <br>
+
+      <button type="button" style="margin: 20px">Transfer</button><br />
+    </form>
+  </body>
+</html>

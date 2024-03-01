@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        main .product-card:hover{
+            background-color: #ddd;
+        }
+
+        .product-card {
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            /* display: flex; */
+            flex-direction: column;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .product-details {
+            padding: 15px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            flex-grow: 1;
+            margin-bottom: 10px;
+        }
+
+        .product-price {
+            font-size: 16px;
+            color: #009688;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Product Showcase</h1>
+        <p>Explore our latest products</p>
+    </header>
+
+    <main>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 1">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$29.99</div>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="http://timesofindia.indiatimes.com/photo/msid-60410264/60410264.jpg?1293143" alt="Product Image 2">
+            <div class="product-details">
+                <div class="product-title">lorem</div>
+                <div class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
+                <div class="product-price">$39.99</div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+</html>

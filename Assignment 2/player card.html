@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .team-section {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .team-member {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+            margin: 10px;
+            width: 250px;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member-grid {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .team-member-avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+
+        .team-member-name {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        .team-member-role {
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<div class="team-section">
+    <div class="team-member">
+        <div class="team-member-grid">
+            <img src="team_member1.jpg" alt="Team Member 1" class="team-member-avatar">
+            <div class="team-member-name">John Doe</div>
+            <div class="team-member-role">Designer</div>
+        </div>
+    </div>
+
+    <div class="team-member">
+        <div class="team-member-grid">
+            <img src="team_member2.jpg" alt="Team Member 2" class="team-member-avatar">
+            <div class="team-member-name">Jane Smith</div>
+            <div class="team-member-role">Developer</div>
+        </div>
+    </div>
+
+    <div class="team-member">
+        <div class="team-member-grid">
+            <img src="team_member2.jpg" alt="Team Member 3" class="team-member-avatar">
+            <div class="team-member-name">lorem</div>
+            <div class="team-member-role">Lorem, ipsum.</div>
+        </div>
+    </div>
+    <div class="team-member">
+        <div class="team-member-grid">
+            <img src="team_member2.jpg" alt="Team Member 4" class="team-member-avatar">
+            <div class="team-member-name">Jane watson</div>
+            <div class="team-member-role">lead</div>
+        </div>
+    </div>
+    <div class="team-member">
+        <div class="team-member-grid">
+            <img src="team_member2.jpg" alt="Team Member 5" class="team-member-avatar">
+            <div class="team-member-name">willson</div>
+            <div class="team-member-role">front end Developer</div>
+        </div>
+    </div>
+    <div class="team-member">
+        <div class="team-member-grid">
+            <img src="team_member2.jpg" alt="Team Member 6" class="team-member-avatar">
+            <div class="team-member-name">tom</div>
+            <div class="team-member-role">Back end Developer</div>
+        </div>
+    </div>
+    <div class="team-member">
+        <div class="team-member-grid">
+            <img src="team_member2.jpg" alt="Team Member 7" class="team-member-avatar">
+            <div class="team-member-name">Sam</div>
+            <div class="team-member-role">PMO</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
