@@ -157,6 +157,34 @@
 // 	3 8 10
 // 	4 7 11 14
 // 	5 6 12 13 15
+function pattern(n){
+    let str=``
+    for ( i=1;i<=n;i++){
+        for( j=1;j<=i;j++){
+            if(j===1){
+                str+=i
+            }
+            else if(j%2 ==0){
+                str+="  "+(getLastVal(n,j-1)+(n-i)+1)
+            }
+            else {
+                str+= "  "+(getLastVal(n,j-1)+(i-j)+1)
+            }
+        }
+        str+= "\n"
+    }
+    console.log(str);
+}
+function getLastVal(n,col){
+    let val = n;
+    for(let i=1;i<col;i++){
+        n+=val-1
+        val--
+    }
+    return n
+}
+pattern(5)
+
 
 // 10)program for adding zeros after 3 values in array
 // function addZerosAfterThreeValues(arr) {
